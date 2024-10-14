@@ -1,0 +1,9 @@
+<form (ngSubmit)="emitiendoTarea()">
+  <label for="idTarea">Id: </label>
+  <input type="number" [(ngModel)] = "tarea.id" [ngModelOptions]="{standalone: true}">
+
+  <label for="">Tarea: </label>
+  <input type="text" [(ngModel)]="tarea.nombre" [ngModelOptions]="{standalone: true}">
+
+  <button>Add Tarea</button>
+</form>
