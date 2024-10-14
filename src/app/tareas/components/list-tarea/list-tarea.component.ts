@@ -15,7 +15,7 @@ export class ListTareaComponent {
 
 
   recibiendoTarea(tarea: Tarea){
-    this.listTarea.push(tarea)
+    this.listTarea.push({...tarea})
   }
 
 }
